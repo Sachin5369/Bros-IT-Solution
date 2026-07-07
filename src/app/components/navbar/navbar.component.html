@@ -1,0 +1,77 @@
+
+    <!-- Navigation Links -->
+       <!-- <nav class="navbar-custom" [class.top-hidden]="hideTopHeader"> -->
+        <!-- <nav class="navbar-custom"></nav>
+  <div class="container d-flex align-items-center justify-content-between"> 
+     <a href="#" class="navbar-brand-custom"><i data-lucide="package" style="color:var(--blue)"></i>Bros<span class="dot">IT Solutions</span></a>
+      <div class="d-none d-lg-flex align-items-center gap-2">
+<a routerLink="/product" class="nav-link-custom active-link">Product</a>    
+<a routerLink="/customers" class="nav-link-custom">Customers</a>
+<a routerLink="/industries" class="nav-link-custom">Industries</a>
+    </div>
+    <div class="d-flex align-items-center gap-3">       
+      <button class="theme-toggle" aria-label="Toggle dark mode" (click)="toggleTheme()">
+        <i [attr.data-lucide]="theme === 'dark' ? 'sun' : 'moon'" style="width:18px;height:18px"></i>
+      </button>
+      <button class="theme-toggle mobile-menu-btn" aria-label="Open menu" (click)="toggleMobileMenu()">
+        <i data-lucide="menu" style="width:18px;height:18px"></i>
+      </button>
+   </div>
+    </div>
+  <div class="d-lg-none" [style.display]="mobileMenuOpen ? 'block' : 'none'" style="background:var(--bg);border-top:1px solid var(--border);margin-top:14px;"> -->
+      <!-- <div class="container py-3 d-flex flex-column gap-2">
+      <a href="#features" class="nav-link-custom" (click)="closeMobileMenu()">Product</a>
+      <a href="#industries" class="nav-link-custom" (click)="closeMobileMenu()">Industries</a>
+      <a href="#testimonials" class="nav-link-custom" (click)="closeMobileMenu()">Customers</a>
+    </div> 
+  </div> -->
+  
+<!-- </nav>     -->
+ <!-- <nav class="navbar-custom"[class.top-hidden]="hideTopHeader"> -->
+
+
+    <!-- <a routerLink="/" class="navbar-brand-custom">
+      <i data-lucide="package" style="color:var(--blue)"></i>
+      Bros<span class="dot">IT Solutions</span>
+    </a> -->
+     <!-- <a href="#" class="navbar-brand-custom"><i data-lucide="package" style="color:var(--blue)"></i>Bros<span class="dot">IT Solut</span></a> -->
+
+    <!-- Links -->
+      <!-- <a routerLink="/product" class="nav-link-custom">Product</a>
+      <a routerLink="/industries" class="nav-link-custom">Industries</a>
+      <a routerLink="/customers" class="nav-link-custom">Customers</a> -->
+      <a href="#main" class="skip-link">Skip to content</a>
+
+ <nav class="navbar-custom"[class.scrolled]="isScrolled">
+
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <!-- Logo -->
+    <a routerLink="/" class="navbar-brand-custom">
+ <img src="assets/img/bros-logo.jpg"alt="Bro"class="logo-img">
+  <span class="brand-text ">
+    Bros <span class="dot">IT Solutions</span>
+  </span>
+
+</a>
+       <div class="nav-links">
+  <a href="#features">Product</a>
+  <a href="#industries">Industries</a>
+  <a href="#customers">Customers</a>
+</div>
+
+    <!-- Right -->
+    <div class="d-flex align-items-center gap-3">
+      <button class="theme-toggle" (click)="toggleTheme()">
+        <i [attr.data-lucide]="theme === 'dark' ? 'sun' : 'moon'"></i>
+      </button>
+
+      <button class="theme-toggle mobile-menu-btn"
+              (click)="toggleMobileMenu()">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+
+  </div>
+
+</nav>

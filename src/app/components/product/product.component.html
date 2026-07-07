@@ -1,0 +1,45 @@
+<!-- </section>  --> 
+
+<!-- <h1 style="background:red;color:white;padding:10px">
+PRODUCT PAGE
+</h1> -->
+<app-navbar></app-navbar>
+<section class="section" id="features" style="background:var(--card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="eyebrow">Platform</span>
+      <h2 class="section-title">One platform, every module your business needs</h2>
+      <p class="section-sub mx-auto">From daily billing to financial ledgers — organized into clear, connected modules.</p>
+    </div>
+
+    <p class="module-tag" data-aos="fade-up">Core Modules</p>
+    <div class="row g-4 mb-5">
+      <div class="col-md-6" data-aos="fade-up" [attr.data-aos-delay]="(i % 2) * 80" *ngFor="let m of coreModules; let i = index">
+        <div class="module-block">
+          <div class="module-icon"><i [attr.data-lucide]="m[0]" style="width:22px;height:22px"></i></div>
+          <div><h4 style="font-size:1rem;font-weight:700;margin-bottom:6px;">{{ m[1] }}</h4><p style="font-size:.87rem;color:var(--text-2);margin:0;">{{ m[2] }}</p></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="module-tag" data-aos="fade-up">Advanced Features</p>
+    <div class="row g-4 mb-5">
+      <div class="col-md-6" data-aos="fade-up" [attr.data-aos-delay]="(i % 2) * 80" *ngFor="let m of advModules; let i = index">
+        <div class="module-block">
+          <div class="module-icon"><i [attr.data-lucide]="m[0]" style="width:22px;height:22px"></i></div>
+          <div><h4 style="font-size:1rem;font-weight:700;margin-bottom:6px;">{{ m[1] }}</h4><p style="font-size:.87rem;color:var(--text-2);margin:0;">{{ m[2] }}</p></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="module-tag" data-aos="fade-up">Financial Ledgers</p>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" [attr.data-aos-delay]="(i % 2) * 80" *ngFor="let m of ledgerModules; let i = index">
+        <div class="module-block">
+          <div class="module-icon"><i [attr.data-lucide]="m[0]" style="width:22px;height:22px"></i></div>
+          <div><h4 style="font-size:1rem;font-weight:700;margin-bottom:6px;">{{ m[1] }}</h4><p style="font-size:.87rem;color:var(--text-2);margin:0;">{{ m[2] }}</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
